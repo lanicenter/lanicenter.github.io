@@ -189,6 +189,20 @@ img { max-width: 100%; }
   border-radius: 999px;
   box-shadow: var(--shadow);
   backdrop-filter: blur(16px);
+  transition: height 220ms var(--ease), padding 220ms var(--ease), gap 220ms var(--ease);
+}
+.nav.is-compact {
+  height: 48px;
+  gap: 8px;
+  padding-inline: 8px 8px;
+}
+.nav.is-compact .brand-wordmark {
+  height: 30px;
+}
+.nav.is-compact .nav-links a,
+.nav.is-compact .lang a {
+  padding: 6px 10px;
+  font-size: 13px;
 }
 .nav a {
   pointer-events: auto;
@@ -217,6 +231,7 @@ img { max-width: 100%; }
   display: block;
   flex: none;
   border-radius: 10px;
+  transition: height 220ms var(--ease);
 }
 .mark {
   width: 36px;
@@ -1239,6 +1254,26 @@ html[lang="ar"] .ring i { direction: rtl; }
     row-gap: 4px;
     padding-block: 8px;
     direction: ltr;
+  }
+  .nav-links {
+    max-height: 48px;
+    overflow: hidden;
+    transition: max-height 220ms var(--ease), opacity 180ms var(--ease);
+  }
+  .nav.is-compact {
+    height: 52px;
+    flex-wrap: nowrap;
+    padding-block: 6px;
+    border-radius: 999px;
+  }
+  .nav.is-compact .nav-links {
+    max-height: 0;
+    opacity: 0;
+    flex: 0 0 0;
+    pointer-events: none;
+  }
+  .nav.is-compact .brand-wordmark {
+    height: 28px;
   }
   .brand { flex: 1 1 auto; order: 1; min-width: 0; }
   .brand-wordmark { height: 34px; width: auto; max-width: min(52vw, 160px); }

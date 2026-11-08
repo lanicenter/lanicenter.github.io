@@ -87,10 +87,10 @@
     : [];
   // One royalty-free Mixkit clip per story chapter (matched to the section).
   var liveSources = [
-    "https://assets.mixkit.co/videos/991/991-720.mp4",       // 0 Start — busy market
-    "https://assets.mixkit.co/videos/6302/6302-720.mp4",     // 1 Shop — retail / shopping
-    "https://assets.mixkit.co/videos/42721/42721-720.mp4",   // 2 App — phone in hand
-    "https://assets.mixkit.co/videos/34317/34317-720.mp4",   // 3 Pay — card / payment
+    "https://assets.mixkit.co/videos/31086/31086-720.mp4",   // 0 Start — shopping mall
+    "https://assets.mixkit.co/videos/42137/42137-720.mp4",   // 1 Shop — packing an order
+    "https://assets.mixkit.co/videos/1712/1712-720.mp4",     // 2 App — hands on a phone
+    "https://assets.mixkit.co/videos/6367/6367-720.mp4",     // 3 Pay — card terminal
     "https://assets.mixkit.co/videos/49878/49878-720.mp4",   // 4 Soon — city night
   ];
   var liveIndex = -1;

@@ -51,4 +51,31 @@
       apply(el.getAttribute("data-lang") || "ckb");
     });
   });
+
+  var nav = document.querySelector("header.nav");
+  if (nav) {
+    var lastY = window.scrollY;
+    var down = 0;
+    var up = 0;
+    window.addEventListener("scroll", function () {
+      var y = window.scrollY;
+      var delta = y - lastY;
+      lastY = y;
+      if (y < 24) {
+        nav.classList.remove("is-compact");
+        down = 0;
+        up = 0;
+        return;
+      }
+      if (delta > 0) {
+        down += delta;
+        up = 0;
+        if (down > 10) nav.classList.add("is-compact");
+      } else if (delta < 0) {
+        up += -delta;
+        down = 0;
+        if (up > 10) nav.classList.remove("is-compact");
+      }
+    }, { passive: true });
+  }
 })();
