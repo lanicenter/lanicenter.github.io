@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248 64" role="img" aria-label="Lani Center">
+  <title>Lani Center · Customer lockup</title>
+  <rect width="248" height="64" rx="14" fill="#2563EB"/>
+  <rect width="9.333333333333332" height="37.33333333333333" x="13.333333333333332" y="13.333333333333332" fill="#fff" rx="4.666666666666666"/>
+  <rect width="23.333333333333332" height="9.333333333333332" x="27.333333333333332" y="41.33333333333333" fill="#fff" rx="4.666666666666666"/>
+  <rect width="8.866666666666667" height="8.866666666666667" x="28" y="27.133333333333333" fill="#fff" rx="2.482666666666667"/>
+  <text x="72" y="42" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="800" fill="#FFFFFF" letter-spacing="-0.7">Lani Center</text>
+</svg>
