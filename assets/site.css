@@ -405,10 +405,7 @@ html[lang="en"] .lang [data-lang="en"] {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(7, 16, 31, 0.35), rgba(7, 16, 31, 0.22) 35%, rgba(7, 16, 31, 0.55)),
-    radial-gradient(70% 60% at 50% 20%, rgba(37, 99, 235, 0.28), transparent 68%),
-    rgba(7, 16, 31, 0.28);
+  background: linear-gradient(180deg, rgba(7, 16, 31, 0.18), rgba(7, 16, 31, 0.08) 40%, rgba(7, 16, 31, 0.42));
   pointer-events: none;
 }
 .flow-canvas {
@@ -417,7 +414,7 @@ html[lang="en"] .lang [data-lang="en"] {
   width: 100%;
   height: 100%;
   display: block;
-  opacity: 0.55;
+  opacity: 0.16;
   mix-blend-mode: screen;
 }
 .flow-glow {

@@ -173,7 +173,15 @@
     setLiveScene(active);
   }
 
-  if (!reduce && liveClips.length) setLiveScene(0);
+  if (!reduce && liveClips.length && liveSources.length) {
+    liveClips[0].src = liveSources[0];
+    liveClips[0].dataset.src = liveSources[0];
+    playClip(liveClips[0]);
+    liveIndex = 0;
+    liveSlot = 0;
+    var nextSrc = liveSources[1];
+    if (nextSrc) loadLive(1, nextSrc, liveToken);
+  }
 
   // 60fps soft particle field behind the story.
   var particles = [];
